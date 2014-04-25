@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+	    <title>Music Map</title>
+	    <meta name="Description" content="Explore top tracks across the globe."/>
+	    <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+	    <link rel="stylesheet" type="text/css" href="css/style-ad.css"/>
+	    <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'/>
+	    <link href='http://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+	    <script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+	    <!-- new libraries to use lastfm -->
+	    <script type="text/javascript" src="js/lastfm.api.cache.js"></script>
+	    <script type="text/javascript" src="js/lastfm.api.md5.js"></script>
+	    <script type="text/javascript" src="js/lastfm.api.js"></script>
+
+		<script src="js/jsrender.js"></script>
+		<script src="js/purl.js"></script>
+		<script src="js/script-ad.js"></script>
+		<script src="js/main-rr.js"></script>
+		<script src="js/swfobject.js"></script>
+
+		<!-- viz -->
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="js/d3.min.js"></script>
+	</head>
+	
+	<body>
+	<div id="mapWrapper">
+			<div id="map-canvas"></div>
+
+			<div id="infoWrapper"></div>
+
+			 <div id="info">
+				<div>
+					<span id="infoClose">&#215;</span>
+					<h1>Music Map<h1>
+					<h2> Explore popular music around the globe</h2>
+					<p> Music Map helps you discover popular and trending music worldwide. At first glance, the map tells you which tracks and artists are top-ranked across the world. Exploring further will uncover top trending charts for each city. As much as it is a delight for music fans, music trend analysts and event organisers may also find this useful in understanding what people around the world are listening to.<p>
+				</div>
+				<div id="base">
+					<div id="exploreButton">
+						<p>Have Fun Exploring!</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="legendHeaderMin">
+				<p class="arrow">&#12296;</p>
+				<p class="header">Top Tracks</p>
+			</div>
+			
+			<div id="legend">
+				<ul id="legendlist">
+					<div id="legendHeaderMax">
+						<p class="arrow">&#12297;</p>
+						<p class="header">Top Tracks</p>
+					</div>
+		        </ul>
+			</div>
+
+
+			<div id="modal">
+				<span id="modalClose">&#215;</span>
+					<svg class="chart"></svg>
+
+			</div>
+
+			<div id="videoPlayer">
+				<div id="ytapiplayer" class="video-js" controls preload="auto"></div>
+			</div>
+
+	</div>
+	
+	</body>
+</html>
